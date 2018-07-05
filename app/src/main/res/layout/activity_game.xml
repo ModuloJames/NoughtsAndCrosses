@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modulojames.noughtsandcrosses.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playerTurnText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/player_string"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="30sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/NWButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/NButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/NEButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/WButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty"
+                    android:layout_weight="1" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/CButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/EButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/SWButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/SButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+
+                <com.modulojames.noughtsandcrosses.GameLogic.Tile
+                    android:id="@+id/SEButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty_string"
+                    android:onClick="movePlayed"
+                    android:src="@drawable/empty"
+                    app:srcCompat="@drawable/empty" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

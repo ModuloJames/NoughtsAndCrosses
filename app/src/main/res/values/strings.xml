@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NoughtsAndCrosses</string>
+    <string name="welcome">Start two player game</string>
+    <string name="start_solo_game">Start single player game</string>
+    <string name="empty_string">empty</string>
+    <string name="player_string">It is player %1$ss turn</string>
+    <string name="game_won_title">The game has been won</string>
+    <string name="game_won_body">Player %1$s has won the game!\nReturn to the main menu to start a new game</string>
+    <string name="game_tie_title">The game is a tie</string>
+    <string name="game_tie_body">The game is a tie, no one has won the game.\nReturn to the main menu to start a new game.</string>
+    <string name="easy_difficulty">Easy</string>
+    <string name="medium_difficulty">Medium</string>
+    <string name="hard_difficulty">Hard</string>
+    <string name="impossible_difficulty">Impossible</string>
+    <string name="difficulty_help_text">Single player game opponent difficulty</string>
+    <string name="settings_button">Settings</string>
+    <string name="difficulty_save_loc">com.modulojames.noughtsandcrosses.difficulty</string>
+</resources>
